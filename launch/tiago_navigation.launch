@@ -3,6 +3,7 @@
   <arg name="namespace" default="/"/>
 
   <arg name="world"  default="comp_cafe"/>
+  <arg name="map_name"    default="$(arg world)"/>
   <arg name="robot"  default="custom"/>
   <arg name="gzpose" default="-x 0.5 -y 6.0 -z 0.0 -R 0.0 -P 0.0 -Y -1.570796"/>
 
@@ -10,7 +11,7 @@
   <arg name="global_planner" default="navfn"/>
   <arg name="local_planner"  default="pal"/>
   <arg name="localization"   default="amcl"/>
-  <arg name="map"            default="$(env HOME)/.pal/tiago_maps/configurations/$(arg world)"/>
+  <arg name="map"            default="$(env HOME)/.pal/tiago_maps/configurations/$(arg map_name)"/>
 
   <arg name="rviz"     default="true"/>
   <arg name="gzclient" default="true"/>
