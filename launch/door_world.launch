@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
-  <arg name="world"  default="office_with_door"/>
+  <arg name="world"  default="door_hinged"/>
   <arg name="robot"  default="custom"/>
   <arg name="gzpose" default="-x 1.105771 -y -5.357486 -z 0.0 -R 0.0 -P 0.0 -Y 1.570796"/>
   <arg name="gzclient" default="true"/>
