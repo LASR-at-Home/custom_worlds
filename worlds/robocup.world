@@ -1889,10 +1889,10 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>6624 477000000</sim_time>
-      <real_time>1520 965212994</real_time>
-      <wall_time>1590335168 46176794</wall_time>
-      <iterations>1516419</iterations>
+      <sim_time>9033 416000000</sim_time>
+      <real_time>2419 28246955</real_time>
+      <wall_time>1590337820 411863346</wall_time>
+      <iterations>2408939</iterations>
       <model name='Robocup'>
         <pose frame=''>-0.0925 -3.37243 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -1968,10 +1968,10 @@
         </link>
       </model>
       <model name='bag2'>
-        <pose frame=''>5.10954 -4.2877 1.12515 0 -0 0</pose>
+        <pose frame=''>5.39771 -4.2877 0.992719 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose frame=''>5.10954 -4.2877 1.12515 0 -0 0</pose>
+          <pose frame=''>5.39771 -4.2877 0.992719 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -2278,21 +2278,21 @@
         </link>
       </model>
       <model name='sitting_man'>
-        <pose frame=''>-8.92126 -6.98695 -3.21588e+07 0 -0 0</pose>
+        <pose frame=''>-8.92126 -6.98695 -1.21072e+08 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose frame=''>-8.92126 -6.98695 -3.21588e+07 1.5708 -0 0</pose>
-          <velocity>0 0 -25106 0 -0 0</velocity>
+          <pose frame=''>-8.92126 -6.98695 -1.21072e+08 1.5708 -0 0</pose>
+          <velocity>0 0 -48713.6 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='sitting_model'>
-        <pose frame=''>-8.84592 -4.07626 -3.21639e+07 0 -0 0</pose>
+        <pose frame=''>-8.84592 -4.07626 -1.21082e+08 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose frame=''>-8.84592 -4.07626 -3.21639e+07 0 -0 0</pose>
-          <velocity>0 0 -25108 0 -0 0</velocity>
+          <pose frame=''>-8.84592 -4.07626 -1.21082e+08 0 -0 0</pose>
+          <velocity>0 0 -48715.6 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
@@ -3202,9 +3202,9 @@
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>31.4941 -12.1068 32.5424 0 0.905796 2.49465</pose>
-        <view_controller>orbit</view_controller>
-        <projection_type>perspective</projection_type>
+        <pose frame=''>4.54934 2.00366 7.49541 0 0.761797 -2.60051</pose>
+        <view_controller>ortho</view_controller>
+        <projection_type>orthographic</projection_type>
       </camera>
     </gui>
     <model name='cessna_c172_static'>
