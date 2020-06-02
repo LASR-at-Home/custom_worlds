@@ -2298,10 +2298,10 @@
         </link>
       </model>
       <model name='sofa'>
-        <pose frame=''>-7.62405 -4.41976 0.056498 1.57079 -0 0</pose>
+        <pose frame=''>-7.86268 -4.08721 0.056498 1.57079 2e-06 0.258459</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose frame=''>-7.62405 -4.41976 0.056498 1.57079 -0 0</pose>
+          <pose frame=''>-7.86268 -4.08721 0.056498 1.57079 2e-06 0.258459</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -2312,16 +2312,6 @@
         <scale>1 1 1</scale>
         <link name='body'>
           <pose frame=''>-7.85848 -7.04483 0.056497 1.57079 2e-06 0.249943</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='table'>
-        <pose frame=''>-7.86928 -6.59448 -0.462873 0 -0 1.57</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-7.86928 -6.59448 -0.462873 0 -0 1.57</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
