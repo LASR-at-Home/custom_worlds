@@ -1,3 +1,13 @@
+## Compatibility
+
+master branch was updated to work with the downloadable container released for 2020.
+
+For containers **built from source** via tiago-lib:
+
+    git fetch
+    git checkout 2019-version
+
+
 ## Instructions
 
 To launch custom_worlds in mapping mode:
@@ -10,6 +20,10 @@ to launch custom_worlds in navigation mode:
     roslaunch custom_worlds tiago_navigation.launch world:="<world_name>"
 
 
-Worlds can be found in the **/worlds** directory.
+Please note that the `.world` suffix should be ommitted.
 
-Quick-launch files for navigation can be found in the **/launch** directory.
+## Directories
+
+- Worlds can be found in and added to the **/worlds** directory.
+- 3D models can be found in and added to the **/models** directory.
+- Quick-launch files for navigation can be found in the **/launch** directory.
