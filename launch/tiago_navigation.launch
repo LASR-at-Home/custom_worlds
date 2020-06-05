@@ -30,14 +30,12 @@
   <arg name="sim_sufix" value=""                unless="$(arg public_sim)"/>
 
   <env name="PAL_HOST" value="tiago" />
-  <env name="GAZEBO_MODEL_PATH" value="$(find custom_worlds)/models" />
-  <env name="GAZEBO_RESOURCE_PATH" value="$(find custom_worlds)/worlds" />
-  
+
   <node name="update_maps_link" pkg="pal_navigation_sm" type="base_maps_symlink.sh" args="tiago_maps"/>
 
   <group ns="$(arg namespace)">
 
-    <include file="$(find tiago_gazebo)/launch/tiago_gazebo.launch">
+    <include file="$(find custom_worlds)/launch/tiago_gazebo.launch">
       <arg name="world"      value="$(arg world)"/>
       <arg name="arm" value="$(arg arm)"/>
       <arg name="end_effector" value="$(arg end_effector)"/>
