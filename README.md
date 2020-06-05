@@ -1,8 +1,8 @@
-## Compatibility
+## Compatibility (please read if accessing from DEC-10)
 
 master branch was updated to work with the downloadable container released for 2020.
 
-For containers **built from source** via tiago-lib:
+For containers **built from source** via tiago-lib (DEC-10 included):
 
     git fetch
     git checkout 2019-version
