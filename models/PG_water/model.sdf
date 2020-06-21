@@ -7,8 +7,8 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://PG_water/Plastic_Water_Bottle.dae</uri>
-            <scale>0.1 0.1 0.1</scale>
+            <uri>model://PG_water/bottled_water.obj</uri>
+            <scale>0.15 0.15 0.15</scale>
           </mesh> 
         </geometry>
       </visual>
