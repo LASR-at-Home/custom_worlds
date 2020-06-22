@@ -2,8 +2,14 @@
 <sdf version='1.4'>
   <model name="coffee_medium">
     <pose>0 0 0  0 0 0</pose>
-    <static>true</static>
+
     <link name="body">
+      <inertial>
+        <mass>1</mass>
+      </inertial>
+
+      <gravity>1</gravity>
+
       <visual name="visual">
         <geometry>
           <mesh>
@@ -12,7 +18,29 @@
           </mesh> 
         </geometry>
       </visual>
+      
+      <collision name='collision'>
+        <geometry>
+            <mesh>
+              <uri>model://costa_medium/costa_coffee_medium.dae</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh> 
+          </geometry>
+      </collision>
+
+      <surface>
+        <friction>
+          <ode>
+            <mu>100.0</mu>
+            <mu2>100.0</mu2>
+          </ode>
+        </friction>
+      </surface>
+    
     </link>
+
+    <static>0</static>
+
   </model>
 </sdf>
 
