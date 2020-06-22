@@ -1,13 +1,13 @@
 <?xml version='1.0'?>
 <sdf version='1.4'>
-  <model name="coffee_test">
+  <model name="coffee_large">
     <pose>0 0 0  0 0 0</pose>
     <static>true</static>
     <link name="body">
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://new_coffee/test.dae</uri>
+            <uri>model://costa_large/costa_coffee_large.dae</uri>
             <scale>0.01 0.01 0.01</scale>
           </mesh> 
         </geometry>
