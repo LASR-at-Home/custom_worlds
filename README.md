@@ -10,6 +10,19 @@ For containers **built from source** via tiago-lib (DEC-10 included):
 
 ## Instructions
 
+
+To clone this specific branch:
+
+    git clone --single-branch --branch wrs-2020_worlds https://gitlab.com/sensible-robots/custom_worlds.git
+
+To setup the mappings:
+
+    Outside of the container, `cd custom_worlds && ./setup.sh
+    
+To launch wrs2020 world:
+
+    roslaunch custom_worlds wrs2020.launch
+
 To launch custom_worlds in mapping mode:
 
     roslaunch custom_worlds tiago_mapping.launch world:="<world_name>"
