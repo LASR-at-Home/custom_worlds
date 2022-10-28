@@ -48,6 +48,7 @@
       <arg name="public_sim" value="$(arg public_sim)"/>
       <arg name="recording"  value="$(arg recording)"/>
       <arg name="extra_gazebo_args" value="$(arg extra_gazebo_args)"/>
+      <arg name="use_moveit_camera" default="true"/>
       <arg if="$(eval local_planner == 'teb')" name="use_dynamic_footprint" value="true"/>
     </include>
 
