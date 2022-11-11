@@ -8,12 +8,12 @@
   <arg name="camera_model"  default="orbbec-astra"/>
 
   <arg name="world"  default="comp_cafe"/>
-  <arg name="gzpose" default="-x 0.0 -y 0.0 -z 0.05 -R 0.0 -P 0.0 -Y -1.570796"/>
+  <arg name="gzpose" default="-x 1.0 -y 2.0 -z 0.05 -R 0.0 -P 0.0 -Y -1.570796"/>
   <arg name="tuck_arm"  default="true"/>
 
   <arg name="planner"        default="base"/>
   <arg name="global_planner" default="global_planner"/>
-  <arg name="local_planner"  default="pal"/>
+  <arg name="local_planner"  default="teb"/>
   <arg name="mapping"        default="karto"/>
 
   <arg name="rviz"     default="true"/>
@@ -63,5 +63,10 @@
   <group if="$(arg public_sim)">
     <node name="relay_map" pkg="topic_tools" type="relay" args="/map /vo_map"/>
   </group>
+
+<!-- Republish topics data -->
+  <node pkg="topic_tools" type="relay" name="relay_scan" args="/scan_raw /scan" />
+  <node pkg="topic_tools" type="relay" name="relay_rgbd_scan" args="/scan_raw /rgbd_scan" />
+  <node pkg="topic_tools" type="throttle" name="throttle_rgbd_scan" args="messages /xtion/depth_registered/points 2 /throttle_filtering_points/filtered_points" />
 
 </launch>
