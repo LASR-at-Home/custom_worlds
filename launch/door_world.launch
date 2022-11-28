@@ -3,7 +3,7 @@
   <arg name="world"  default="door_hinged"/>
   <arg name="gzpose" default="-x 7.0 -y 0.0 -z 0.0 -R 0.0 -P 0.0 -Y 3.141593"/>
   <arg name="gzclient" default="true"/>
-  <arg name="public_sim" default="false"/>
+  <arg name="public_sim" default="true"/>
   <arg name="extra_gazebo_args" default=""/>
 
   <include file="$(find custom_worlds)/launch/tiago_navigation.launch">
@@ -12,5 +12,15 @@
       <arg name="gzclient"   value="$(arg gzclient)"/>
       <arg name="public_sim" value="$(arg public_sim)"/>
       <arg name="extra_gazebo_args" value="$(arg extra_gazebo_args)"/>
-    </include>
+  </include>
+
+  <!-- <node name="update_octomap_res" pkg="dynamic_reconfigure" type="dynparam"
+          args="set_from_parameters /move_group/octomap_resolution">
+        <param name="octomap_resolution" type="double" value="0.1"/>
+    </node> -->
+
+
+  <!-- <rosparam param="octomap_resolution" ns="move_group">0.02</rosparam>
+  <rosparam param="max_range" ns="move_group">2.0</rosparam> -->
+
 </launch>
